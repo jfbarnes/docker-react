@@ -1,8 +1,7 @@
-language: generic
-
 sudo: required
-  services:
-    - docker
+
+services:
+  - docker
   
 before_install:
   - docker build -t joshbarnes/docker-react -f Dockerfile.dev .
